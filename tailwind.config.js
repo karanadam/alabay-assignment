@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         cheese: ["cheeseburga", "cheesburga"],
+        kumbh: ["Kumbh Sans", "sans-serif"],
+        monst: ["Montserrat", "sans-serif"],
       },
     },
   },
