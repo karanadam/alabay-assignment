@@ -3,10 +3,11 @@ import historyBg from '../assets/bg-vectors/history-bg.png'
 import historyDog from '../assets/historyDog.png'
 
 const HistorySection = () => {
+
     return (
-        <section className='w-full h-fit absolute top-0 -z-10 rounded-t-3xl flex justify-center items-center' style={{ backgroundImage: `url(${historyBg})` }}>
-            <div className='basis-2/3 mt-28 history-dog' style={{ WebkitBoxReflect: 'below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4))' }}>
-                <img src={historyDog} alt="history-dog" />
+        <section className='w-full h-fit -mt-12 -z-10 rounded-t-3xl flex justify-center items-center' style={{ backgroundImage: `url(${historyBg})`, height: 'auto', width: '100%', backgroundRepeat: 'no-repeat', backgroundPosition: '10%, 10%', backgroundSize: 'cover' }}>
+            <div className='basis-2/3 mt-28 history-dog' style={{ WebkitBoxReflect: 'below -180px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2))' }}>
+                <img src={historyDog} alt="history-dog" className='h-auto p-10 mb-0 pb-0' />
             </div>
             <div className='basis-1/3'>
                 <div className='text-right mr-10 p-16 flex flex-col'>
