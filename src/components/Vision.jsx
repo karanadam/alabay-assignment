@@ -3,7 +3,7 @@ import groupOfDogs from '/1.png'
 
 const Vision = () => {
     return (
-        <section className='vision-wrapper'>
+        <section className='vision-wrapper mt-10 bg-cover p-10 '>
             <div className='flex flex-col justify-center items-center text-center mx-12 p-6'>
                 <div>
                     <h1 className='font-cheese text-[#FFA800] text-9xl'>PROJECT VISION</h1>

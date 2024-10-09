@@ -8,6 +8,9 @@ export default {
         kumbh: ["Kumbh Sans", "sans-serif"],
         monst: ["Montserrat", "sans-serif"],
       },
+      backgroundImage: {
+        diagonalYellow: "url('src/assets/bg-vectors/vision-bg.png')",
+      },
     },
   },
   plugins: [],

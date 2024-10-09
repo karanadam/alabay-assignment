@@ -5,7 +5,7 @@ import historyDog from '../assets/historyDog.png'
 const HistorySection = () => {
 
     return (
-        <section className='w-full h-fit -mt-12 -z-10 rounded-t-3xl flex justify-center items-center' style={{ backgroundImage: `url(${historyBg})`, height: 'auto', width: '100%', backgroundRepeat: 'no-repeat', backgroundPosition: '10%, 10%', backgroundSize: 'cover' }}>
+        <section className='w-full h-fit -mt-12 -z-10 rounded-t-3xl flex justify-center items-center pb-16' style={{ backgroundImage: `url(${historyBg})`, height: 'auto', width: '100%', backgroundRepeat: 'no-repeat', backgroundPosition: '10%, 10%', backgroundSize: 'cover' }}>
             <div className='basis-2/3 mt-28 history-dog' style={{ WebkitBoxReflect: 'below -180px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2))' }}>
                 <img src={historyDog} alt="history-dog" className='h-auto p-10 mb-0 pb-0' />
             </div>

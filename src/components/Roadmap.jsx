@@ -3,7 +3,7 @@ import roadMapImg from '/2.png'
 
 const Roadmap = () => {
     return (
-        <section className='mx-24 my-24'>
+        <section className='mx-24 mt-24 mb-12'>
             <div className='flex flex-col'>
 
                 <div className='flex justify-start'>
@@ -11,7 +11,7 @@ const Roadmap = () => {
                 </div>
 
                 <div className='flex justify-center items-center p-4 lg:p-10 w-full'>
-                    <div className='basis-1/2 w-3/4 flex flex-col justify-start items-center gap-20 mt-10 lg:mt-3'>
+                    <div className='basis-1/2 w-3/4 flex flex-col justify-start items-center gap-14 mt-10 lg:mt-3'>
                         <p className='font-kumbh font-bold text-3xl'>Our journey is just beginning. Explore our roadmap to see the exciting milestones and future plans we have in store. </p>
                         <p className='font-kumbh font-bold text-3xl text-white p-0 w-full'>
                             Join us as we grow and achieve new heights.

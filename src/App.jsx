@@ -9,6 +9,9 @@ import GallaryCarousel from './components/GallaryCarousel'
 import Vision from './components/Vision';
 import Wrapper from './components/Wrapper';
 import Roadmap from './components/Roadmap';
+import RoadmapCards from './components/RoadmapCards';
+import TokenomicsSection from './components/TokenomicsSection';
+import Merchandise from './components/Merchandise';
 
 const App = () => {
 
@@ -24,6 +27,9 @@ const App = () => {
             <Vision />
             <Roadmap />
           </Wrapper>
+          <RoadmapCards />
+          <TokenomicsSection />
+          <Merchandise />
         </ScrollableWrapper>
       </main>
 
