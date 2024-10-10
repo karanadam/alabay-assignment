@@ -61,7 +61,7 @@ const GamesSection = () => {
     };
 
     return (
-        <section className='w-full flex justify-center items-center bg-diagonalYellow h-auto my-12' >
+        <section className='w-full flex justify-center items-center bg-diagonalYellow bg-cover h-auto my-12' >
             <div className='flex flex-col w-3/4 justify-center items-center py-72 gap-10'>
                 <div className='flex flex-col justify-center items-center gap-20 '>
                     <h1 className='font-cheese text-9xl text-white'>GAMES</h1>

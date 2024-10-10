@@ -3,7 +3,7 @@ import '../App.css'
 
 const Wrapper = ({ children }) => {
     return (
-        <div className='vision-wrapper flex flex-col gap-10 bg-cover sticky'>
+        <div className='vision-wrapper flex flex-col gap-10 bg-diagonalYellow bg-cover sticky'>
             {children}
         </div>
     )
