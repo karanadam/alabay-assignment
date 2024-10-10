@@ -7,7 +7,7 @@ const TokenomicsSection = () => {
         <section className='w-full flex justify-center items-center bg-diagonalYellow my-10 px-10 py-16 bg-auto bg-center'>
             <div className='flex flex-col w-3/4'>
                 <div className='flex justify-start'>
-                    <h1 className='font-cheese text-9xl text-white'>TOKENOMICS</h1>
+                    <h1 className='font-cheese text-9xl text-[#FFA800'>TOKENOMICS</h1>
                 </div>
                 <div className='flex  justify-center items-center'>
                     <div className='flex flex-col gap-10 basis-1/2'>
