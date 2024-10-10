@@ -6,7 +6,7 @@ import leftArrow from '../assets/arrows/left.png'
 import rightArrow from '../assets/arrows/right.png'
 import ability1 from '../assets/Alabay-Games/Abilities-2.png'
 import ability2 from '../assets/Alabay-Games/Abilities-3.png'
-import ability3 from '../assets/Alabay-Games/Artifacts-2.png'
+import ability3 from '../assets/Alabay-Games/artifacts-2.png'
 
 const GamePreview = () => {
 
