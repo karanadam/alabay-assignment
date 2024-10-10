@@ -4,33 +4,22 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import leftArrow from '../assets/arrows/left.png'
 import rightArrow from '../assets/arrows/right.png'
-
-const data = [{
-    type: 'image',
-    img: '/merch/Variant7.png',
-},
-{
-    type: 'image',
-    img: '/merch/Variant8.png',
-}, {
-    type: 'image',
-    img: '/merch/Variant9.png',
-}, {
-    type: 'image',
-    img: '/merch/Variant10.png',
-},
-{
-    type: 'image',
-    img: '/merch/Variant11.png',
-},
-{
-    type: 'image',
-    img: '/merch/Variant12.png',
-},]
+import game1 from '../assets/Alabay-Games/game1.png'
+import game2 from '../assets/Alabay-Games/game2.png'
 
 
-const Merchandise = () => {
 
+const GamesSection = () => {
+
+
+    const data = [{
+        type: 'image',
+        img: game1,
+    },
+    {
+        type: 'image',
+        img: game2,
+    },]
 
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
@@ -50,7 +39,7 @@ const Merchandise = () => {
         return (
             <div
                 className={className}
-                style={{ ...style, display: "block", }}
+                style={{ ...style, display: "none", }}
                 onClick={onClick}
             >
                 <img className="h-auto w-24" src={leftArrow} alt="left arrow" />
@@ -66,22 +55,23 @@ const Merchandise = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         waitForAnimate: false,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
+        // nextArrow: <SampleNextArrow />
     };
 
+
     return (
-        <section className='my-24 text-center'>
-            <div className='flex flex-col gap-10 '>
-                <div>
-                    <h1 className='font-cheese text-9xl text-[#FFA800]'>MERCHANDISE</h1>
+        <section className='w-full flex justify-center items-center bg-diagonalYellow h-auto my-12' >
+            <div className='flex flex-col w-3/4 justify-center items-center py-72 gap-10'>
+                <div className='flex flex-col justify-center items-center gap-20 '>
+                    <h1 className='font-cheese text-9xl text-white'>GAMES</h1>
+                    <h3 className='font-monst font-black text-5xl'>Stay tuned for upcoming games!</h3>
                 </div>
-                <div>
+                <div className='border-8 border-white rounded-3xl m-2'>
                     <Slider {...settings} className='max-w-6xl p-0 m-0'>
                         {data.map((data, index) => (
                             <div key={index} >
                                 <div className=' overflow-hidden justify-center items-center rounded-2xl'>
-                                    <img src={data.img} alt="empty" className='cover' />
+                                    <img src={data.img} alt="empty" />
                                 </div>
                             </div>
                         ))}
@@ -92,4 +82,4 @@ const Merchandise = () => {
     )
 }
 
-export default Merchandise
+export default GamesSection

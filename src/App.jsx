@@ -1,7 +1,4 @@
 import React from 'react'
-import './App.css'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import LandingPage from './components/LandingPage'
 import ScrollableWrapper from './components/ScrollableWrapper'
 import HistorySection from './components/HistorySection'
@@ -12,6 +9,9 @@ import Roadmap from './components/Roadmap';
 import RoadmapCards from './components/RoadmapCards';
 import TokenomicsSection from './components/TokenomicsSection';
 import Merchandise from './components/Merchandise';
+import GamesSection from './components/GamesSection';
+import GamePreview from './components/GamePreview';
+import LinksSection from './components/LinksSection'
 
 const App = () => {
 
@@ -30,6 +30,9 @@ const App = () => {
           <RoadmapCards />
           <TokenomicsSection />
           <Merchandise />
+          <GamesSection />
+          <GamePreview />
+          <LinksSection />
         </ScrollableWrapper>
       </main>
 
