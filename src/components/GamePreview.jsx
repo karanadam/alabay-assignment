@@ -48,7 +48,7 @@ const GamePreview = () => {
     return (
         <section className='w-full p-32 my-24'>
             <div className='flex flex-col'>
-                <div div className='flex justify-start' >
+                <div className='flex justify-start' >
                     <h1 className='font-monst font-black text-[#353535] text-6xl'><span className=' text-[#FFA800]'>GAME</span> PREVIEWS</h1>
                 </div >
                 <div className='w-full my-10'>

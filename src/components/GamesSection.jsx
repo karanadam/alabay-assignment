@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,6 +11,7 @@ import game2 from '../assets/Alabay-Games/game2.png'
 
 const GamesSection = () => {
 
+    console.log(game1, game2); // Log the paths to verify they are correctly resolved
 
     const data = [{
         type: 'image',
@@ -39,14 +40,13 @@ const GamesSection = () => {
         return (
             <div
                 className={className}
-                style={{ ...style, display: "none", }}
+                style={{ ...style, display: "block", }}
                 onClick={onClick}
             >
                 <img className="h-auto w-24" src={leftArrow} alt="left arrow" />
             </div>
         );
     }
-
     const settings = {
         dots: false,
         fade: true,
@@ -55,9 +55,10 @@ const GamesSection = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         waitForAnimate: false,
-        // nextArrow: <SampleNextArrow />
+        // nextArrow: <SampleNextArrow />,
+        // prevArrow: <SamplePrevArrow />,
+        // arrows: false,
     };
-
 
     return (
         <section className='w-full flex justify-center items-center bg-diagonalYellow h-auto my-12' >
@@ -66,12 +67,14 @@ const GamesSection = () => {
                     <h1 className='font-cheese text-9xl text-white'>GAMES</h1>
                     <h3 className='font-monst font-black text-5xl'>Stay tuned for upcoming games!</h3>
                 </div>
-                <div className='border-8 border-white rounded-3xl m-2'>
-                    <Slider {...settings} className='max-w-6xl p-0 m-0'>
+
+
+                <div className='border-8 border-white rounded-3xl m-2 max-w-6xl w-full '>
+                    <Slider {...settings} className=''>
                         {data.map((data, index) => (
                             <div key={index} >
                                 <div className=' overflow-hidden justify-center items-center rounded-2xl'>
-                                    <img src={data.img} alt="empty" />
+                                    <img src={data.img} alt="empty" className=' object-cover' />
                                 </div>
                             </div>
                         ))}
