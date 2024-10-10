@@ -64,16 +64,16 @@ const GamesSection = () => {
         <section className='w-full flex justify-center items-center bg-diagonalYellow bg-cover h-auto my-12' >
             <div className='flex flex-col w-3/4 justify-center items-center py-72 gap-10'>
                 <div className='flex flex-col justify-center items-center gap-20 '>
-                    <h1 className='font-cheese text-9xl text-white'>GAMES</h1>
+                    <h1 className='font-cheese text-9xl text-[#FFA800]'>GAMES</h1>
                     <h3 className='font-monst font-black text-5xl'>Stay tuned for upcoming games!</h3>
                 </div>
 
 
-                <div className='border-8 border-white rounded-3xl m-2 max-w-6xl w-full '>
+                <div className='border-8 border-white rounded-3xl m-2 max-w-6xl w-full'>
                     <Slider {...settings} className=''>
                         {data.map((data, index) => (
                             <div key={index} >
-                                <div className=' overflow-hidden justify-center items-center rounded-2xl'>
+                                <div className='overflow-hidden justify-center items-center rounded-2xl'>
                                     <img src={data.img} alt="empty" className=' object-cover' />
                                 </div>
                             </div>
