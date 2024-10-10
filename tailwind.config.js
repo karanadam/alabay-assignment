@@ -9,7 +9,7 @@ export default {
         monst: ["Montserrat", "sans-serif"],
       },
       backgroundImage: {
-        diagonalYellow: "url('src/assets/bg-vectors/vision-bg.png')",
+        diagonalYellow: "url('/bg-vectors/vision-bg.png')",
       },
     },
   },

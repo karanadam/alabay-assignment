@@ -4,7 +4,7 @@ main {
 }
 
 .vision-wrapper {
-  background-image: url(./assets/bg-vectors/vision-bg.png);
+  background-image: url(/bg-vectors/vision-bg.png);
   background-size: auto;
   background-repeat: no-repeat;
   position: relative;

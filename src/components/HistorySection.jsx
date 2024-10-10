@@ -1,5 +1,5 @@
 import React from 'react'
-import historyBg from '../assets/bg-vectors/history-bg.png'
+import historyBg from '/bg-vectors/history-bg.png'
 import historyDog from '../assets/historyDog.png'
 
 const HistorySection = () => {
